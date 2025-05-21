@@ -9,7 +9,7 @@ test.describe('BestBuy Website Test Suite', () => {
     console.log("United States link clicked");
   });
 
-  // Test Case 1: Verify Homepage Loads Correctly
+  // Test Case 1: Verify Homepage LoadsCorrectly
   test('Homepage should have the correct title', async ({ page }) => {
     await expect(page).toHaveTitle(/Best Buy/);
   });
@@ -20,7 +20,7 @@ test.describe('BestBuy Website Test Suite', () => {
  test('Search functionality should return products', async ({ page }) => {
  const searchInput = page.locator("//input[@class='search-input search-input-default']");
 //  await searchInput.waitFor({ state: 'visible', timeout: 60000 });
- await searchInput.fill('Laptop');
+ await searchInput.fill('Laptop'); 
  await searchInput.press('Enter');
 
  // Ensure results are displayed
